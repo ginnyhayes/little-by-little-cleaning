@@ -43,13 +43,11 @@ Data stays in this browser on this device, with no automatic device sync. Cleari
 
 For checklist changes, the app's Customize tab is easiest. Editing defaults.js affects new/reset data, not already customized lists. When changing app files, bump the cache version in sw.js. Close all app tabs and reopen after the new worker has installed to receive updated offline files. Your localStorage data is separate from that cache.
 
-## C. Host it free later — nothing has been deployed
+## C. Free GitHub Pages hosting
 
-One option is GitHub Pages, which serves this app's static files for free from a public repository on GitHub Free.
+The app is published at **https://ginnyhayes.github.io/little-by-little-cleaning/** from the public `ginnyhayes/little-by-little-cleaning` repository.
 
-1. When ready, ask Codex: “Help me publish this app for free with GitHub Pages.”
-2. Codex can help create a repository, upload the static app files, and enable Pages after your authorization.
-3. Open the provided HTTPS address and import your exported local backup.
+When Codex makes future changes, ask it to test them and publish the updated files to this repository. Open the hosted app and import your exported local backup if you want to move your local computer data to the hosted version.
 
 Only app source/checklist defaults are published; local progress and backup files should not be uploaded. A public repository exposes the default household checklist wording. You can ask Codex to replace the published defaults with generic names first, then import your personal backup privately on your device.
 
@@ -78,4 +76,5 @@ Official Apple instructions: https://support.apple.com/guide/iphone/open-as-web-
 - tests/browser.test.cjs: automated browser tests using this environment's bundled Playwright and Edge (development only)
 
 Tested: all default task counts, 15 rotation weeks, dates before the anchor, daily and Monday resets, per-zone reset, missed cycles, local dates around daylight-saving boundaries, timer controls/extensions/completion, backup round trip, malformed backups, untimed checks, persisted tasks, mobile-width layout, seasonal selection, task editing, and offline reload. The browser test uses isolated storage so test changes do not affect your own lists. Real iPhone Safari installation and background audio still need a physical-device check.
+
 
