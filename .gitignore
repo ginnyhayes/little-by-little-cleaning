@@ -1,0 +1,4 @@
+# Local test output and backups should not be published.
+tests/iphone-today.png
+*backup*.json
+
